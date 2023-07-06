@@ -1,7 +1,25 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import madels.Server
+import java.util.Scanner
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    val input=Scanner(System.`in`)
+    println("1 - ro'yhatdan o'tish,  2 - kirish")
+    val server=Server()
+
+    while (true){
+        when(input.nextInt()){
+            1->{
+                server.add()
+            }
+            2->{
+                server.read()
+            }
+            3->{
+                server.postAdd()
+            }
+            4->{
+                server.showPost()
+            }
+        }
+    }
 }
