@@ -1,0 +1,4 @@
+package madels
+
+class User {
+}

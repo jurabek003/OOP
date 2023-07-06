@@ -1,0 +1,4 @@
+package madels
+
+interface Servis {
+}
